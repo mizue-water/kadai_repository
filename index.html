@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <script>
+            let seibetsu;
+            let value;
+            let intValue;
+            seibetsu = prompt('性別を入力してください。（【1】男性　【2】女性）');
+            value = prompt('赤血球の値を入力してください。');
+
+            intValue = Number(value);
+
+            if (seibetsu = '1') {
+                if (intValue >= 418 && intValue <= 560) {
+                    console.log('値は基準値の範囲内です。');
+                } else {
+                    console.log('値は基準値の範囲外です。');
+                }
+            } else if (seibetsu = '2') {
+                if (intValue >= 384 && intValue <= 504) {
+                    console.log('値は基準値の範囲内です。');
+                } else {
+                    console.log('値は基準値の範囲外です。');
+                }
+            } else {
+                console.log('性別が正しく入力されていません。');
+            }
+        </script>
+    </body>
+</html>
